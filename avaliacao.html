@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Primavera</title>
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+          <h1>Mercado Primavera</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="minhaConta.html">Minha Conta</a></li>
+              <li><a href="carrinho.html">Carrinho</a></li>
+              <li><a href="avaliacao.html">Avaliação</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <sectio>
+          <h2>Avaliação do Serviço</h2>
+
+          <form action="submit_avaliacao.php" method="POST">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required><br><br>
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required><br><br>
+
+              <label>Nota:</label>
+              <div class="rating">
+                  <input type="radio" id="star5" name="nota" value="5"><label for="star5">★</label>
+                  <input type="radio" id="star4" name="nota" value="4"><label for="star4">★</label>
+                  <input type="radio" id="star3" name="nota" value="3"><label for="star3">★</label>
+                  <input type="radio" id="star2" name="nota" value="2"><label for="star2">★</label>
+                  <input type="radio" id="star1" name="nota" value="1"><label for="star1">★</label>
+              </div><br>
+
+              <label for="comentario">Comentário:</label><br>
+              <textarea id="comentario" name="comentario" placeholder="Escreva sua opinião aqui..." required></textarea><br>
+
+              <button type="submit">Enviar Avaliação</button>
+          </form>
+        </sectio>
+    </main>
+
+    <footer id="rodape">
+        <div>
+            <h3>Atendimento</h3>
+            <p>Central de Atendimento</p>
+            <h4>Contatos:</h4>
+            <p>(99) 9999-9999</p>
+            <p>mercadoprimavera@email.com</p>
+            <h4>Horário de atendimento:</h4>
+            <p>De segunda a domingo, das 08h às 21h</p>
+        </div>
+        <div>
+            <h4>Formas de Pagamento</h4>
+            <img src="imagens/pagamento.png" alt="formas de pagamento">
+        </div>
+        <p>&copy; 2025 Mercado Primavera - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

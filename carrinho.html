@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Primavera</title>
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+          <h1>Mercado Primavera</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="minhaConta.html">Minha Conta</a></li>
+              <li><a href="carrinho.html">Carrinho</a></li>
+              <li><a href="avaliacao.html">Avaliação</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <sectioon>
+          <h2>Carrinho de Compras</h2>
+
+          <table >
+              <thead>
+                  <tr>
+                      <th>Produto</th>
+                      <th>Quantidade</th>
+                      <th>Preço</th>
+                      <th>Total</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Café</td>
+                      <td>
+                        <input type="number" class="quantidade" value="1" min="1" onchange="atualizarTotal()">
+                    </td>
+                      <td>R$ 26,99</td>
+                      <td>R$ 53,98</td>
+                  </tr>
+                  <tr>
+                      <td>Sabonete</td>
+                      <td>
+                        <input type="number" class="quantidade" value="1" min="1" onchange="atualizarTotal()">
+                      </td>
+                      <td>R$ 2,29</td>
+                      <td>R$ 2,29</td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <h3>Escolha a Forma de Recebimento</h3>
+          <label>
+              <input type="radio" name="recebimento" value="retirada" checked> Retirada no local
+          </label><br>
+          <label>
+              <input type="radio" name="recebimento" value="entrega"> Entrega em domicílio
+          </label><br>
+          <div id="cep" >
+            <label for="cep">Informe seu CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="9" placeholder="Ex: 12345-678">
+          </div>
+
+          <h3>Escolha a Forma de Pagamento</h3>
+          <label>
+              <input type="radio" name="pagamento" value="cartao" checked> Cartão de Crédito/Débito
+          </label><br>
+          <label>
+              <input type="radio" name="pagamento" value="pix"> PIX
+          </label><br>
+
+          <h3>Total: R$ 56,27</h3>
+
+          <button type="submit">Finalizar Compra</button>
+        </sectioon>
+    </main>
+
+    <footer id="rodape">
+        <div>
+            <h3>Atendimento</h3>
+            <p>Central de Atendimento</p>
+            <h4>Contatos:</h4>
+            <p>(99) 9999-9999</p>
+            <p>mercadoprimavera@email.com</p>
+            <h4>Horário de atendimento:</h4>
+            <p>De segunda a domingo, das 08h às 21h</p>
+        </div>
+        <div>
+            <h4>Formas de Pagamento</h4>
+            <img src="imagens/pagamento.png" alt="formas de pagamento">
+        </div>
+        <p>&copy; 2025 Mercado Primavera - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
